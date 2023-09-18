@@ -9,6 +9,7 @@ html{
 
 header{
     background-color: antiquewhite;
+    padding: 20px;
 }
 
 body{
@@ -17,9 +18,54 @@ body{
 
 footer{
     background-color: antiquewhite;
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+li{
+    list-style: none;
 }
 
 .icono{
     width: 200px;
     height: 200px;
 }
+
+.catalogo_ninos img{
+    width: 200px;
+    height: 200px;
+}
+
+.catalogo_ninos{
+    border: 2px solid;
+}
+
+.catalogo_muebles{
+    border: 2px solid;
+}
+
+.catalogo_muebles img{
+    width: 200px;
+    height: 200px;
+}
+
+.index-catalogo img{
+    width: 300px;
+    height: 300px;
+}
+
+.index-clases img{
+    width: 300px;
+    height: 300px;
+
+}
+
+.navbar{
+    float: right;
+}
+    
+
+
