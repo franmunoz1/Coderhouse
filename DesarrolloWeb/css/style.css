@@ -19,6 +19,12 @@ body{
 footer{
     background-color: antiquewhite;
     padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div{
+    margin: 10px;
 }
 
 nav ul li{
@@ -34,20 +40,6 @@ li{
     height: 200px;
 }
 
-.catalogo_ninos img, .catalogo_muebles img{
-    width: 200px;
-    height: 200px;
-}
-
-.catalogo_ninos, .catalogo_muebles{
-    border: 2px solid;
-}
-
-.index-catalogo img, .index-clases img{
-    width: 300px;
-    height: 300px;
-}
-
 .navbar{
     display: flex;
     justify-content: flex-end;
@@ -55,6 +47,86 @@ li{
     justify-content: space-between;
 }
 
+hr{
+    height:50px;
+    width: 2px;
+    border-width:0;
+    color:#000;
+    background-color:#000;
+   }
+
+/*Estilos de index*/
+.presentacion{
+    border: 2px solid;
+}
+
+.index-catalogo img{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Estilos de catalogo*/
+
+.catalogos img{
+    width: 200px;
+    height: 200px;
+}
+
+.catalogos{
+    border: 2px solid;
+    margin: 10px;
+}
+
+.index-catalogo img, .index-clases img{
+    width: 300px;
+    height: 300px;
+}
+
+.articulos{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+span{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.catalogos article{
+    padding: 20px;
+}
+
+/*Estilos de clases*/
+
+
+/*Estilos de contacto*/
+
+
+/*Estilo de nosotros*/
+.nosotros video, img{
+    height: 500px;
+}
+
+.nosotros{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fotos-nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.fotos-nosotros img{
+    width: 400px;
+    height: 400px;
+}
 
     
 
