@@ -18,7 +18,7 @@ body{
 
 footer{
     background-color: antiquewhite;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 nav ul li{
@@ -34,38 +34,27 @@ li{
     height: 200px;
 }
 
-.catalogo_ninos img{
+.catalogo_ninos img, .catalogo_muebles img{
     width: 200px;
     height: 200px;
 }
 
-.catalogo_ninos{
+.catalogo_ninos, .catalogo_muebles{
     border: 2px solid;
 }
 
-.catalogo_muebles{
-    border: 2px solid;
-}
-
-.catalogo_muebles img{
-    width: 200px;
-    height: 200px;
-}
-
-.index-catalogo img{
+.index-catalogo img, .index-clases img{
     width: 300px;
     height: 300px;
-}
-
-.index-clases img{
-    width: 300px;
-    height: 300px;
-
 }
 
 .navbar{
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
     
 
