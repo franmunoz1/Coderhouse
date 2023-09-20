@@ -17,36 +17,17 @@ body{
     background-color: aliceblue;
 }
 
-/* Footer */
-
-footer{
-    background-color: antiquewhite;
-    padding-left: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-footer .derechos{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-footer div{
-    margin: 10px;
-}
-
-
-a{
-    text-decoration: none;
-}
-
 nav ul li{
     display: inline-block;
 }
 
 li{
     list-style: none;
+}
+
+.barra-navegacion{
+    display: flex;
+    gap: 20px;
 }
 
 .icono{
@@ -61,6 +42,46 @@ li{
     justify-content: space-between;
     gap: 20px;
 }
+
+/* Footer */
+
+footer{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div{
+    margin: 10px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-around;
+}
+
+.derechos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.footer-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 
 /*Estilos de index*/
@@ -138,6 +159,7 @@ span{
 }
 
 .clase-normal, .clase-personalizada{
+    padding: 20px;
     border: solid 1px black;
     display: flex;
     flex-direction: column;
