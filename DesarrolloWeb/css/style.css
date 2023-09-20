@@ -19,10 +19,16 @@ body{
 
 nav ul li{
     display: inline-block;
+    text-decoration: none;
 }
 
 li{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .barra-navegacion{
@@ -31,15 +37,15 @@ li{
 }
 
 .icono{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 .navbar{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
 }
 
@@ -125,6 +131,10 @@ footer div{
 
 /*Estilos de catalogo*/
 
+.articulos{
+    padding: 20px;
+}
+
 .catalogos img{
     width: 200px;
     height: 200px;
@@ -149,6 +159,11 @@ span{
 
 .catalogos article{
     padding: 20px;
+}
+
+.articulos article{
+    border: solid 1px black;
+    border-radius: 5px;
 }
 
 /*Estilos de clases*/
