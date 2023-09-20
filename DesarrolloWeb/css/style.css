@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -16,6 +17,8 @@ body{
     background-color: aliceblue;
 }
 
+/* Footer */
+
 footer{
     background-color: antiquewhite;
     padding-left: 20px;
@@ -23,8 +26,19 @@ footer{
     justify-content: space-around;
 }
 
+footer .derechos{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
 footer div{
     margin: 10px;
+}
+
+
+a{
+    text-decoration: none;
 }
 
 nav ul li{
@@ -45,32 +59,48 @@ li{
     justify-content: flex-end;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
-hr{
-    height:50px;
-    width: 2px;
-    border-width:0;
-    color:#000;
-    background-color:#000;
-   }
 
 /*Estilos de index*/
+
 .presentacion{
     border: 2px solid;
 }
 
+.presentacion a{
+    border: solid 1px black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+    display: inline-block;
+}
+
 .index-catalogo{
+    padding: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    align-items: center;
 }
 
 .index-clases{
+    padding: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    align-items: center;
 }
+
+.info-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 /*Estilos de catalogo*/
 
@@ -82,11 +112,6 @@ hr{
 .catalogos{
     border: 2px solid;
     margin: 10px;
-}
-
-.index-catalogo img, .index-clases img{
-    width: 300px;
-    height: 300px;
 }
 
 .articulos{
@@ -107,11 +132,44 @@ span{
 
 /*Estilos de clases*/
 
+.seccion-clases{
+    display: flex;
+    justify-content: space-around;
+}
+
+.clase-normal, .clase-personalizada{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*Estilos de contacto*/
 
+.formulario{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 
 /*Estilo de nosotros*/
+.nosotros{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros-primero, .nosotros-segundo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nosotros video, img{
     height: 500px;
 }
@@ -128,11 +186,12 @@ span{
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .fotos-nosotros img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
     
