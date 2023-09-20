@@ -60,9 +60,16 @@ hr{
     border: 2px solid;
 }
 
-.index-catalogo img{
+.index-catalogo{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.index-clases{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 /*Estilos de catalogo*/
