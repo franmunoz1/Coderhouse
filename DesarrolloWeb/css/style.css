@@ -137,40 +137,43 @@ footer div{
 
 /*Estilos de catalogo*/
 
-.articulos{
-    padding: 20px;
+
+
+.articulos img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.catalogos img{
-    width: 200px;
+.articulos{
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto_fit,
+        minmax(100px,1fr)
+    );
+    gap: 2rem;
+}
+
+.articulos{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.articulos img{
+    width: 100%;
     height: 200px;
-    padding: 20px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.catalogos{
-    border: 2px solid;
-    margin: 10px;
-}
-
-.articulos{
-    display: flex;
-    justify-content: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-span{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.catalogos article{
-    padding: 20px;
-}
-
-.articulos article{
-    border: solid 1px black;
-    border-radius: 5px;
+@media (max-width:768){
+    .articulos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,350px);
+    }
 }
 
 /*Estilos de clases*/
