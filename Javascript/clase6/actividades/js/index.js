@@ -57,6 +57,8 @@ for (const recorridoEstudiantes of ESTUDIANTES) {
 
 console.log(estudiantesAprobados)
 
+//como hacer para poder ver el nombre solo de los estudiantes aprobados pero almacenando el vector completo
+
 // Actividad 4
 
 const PALABRAS = ["hola", "como", "estas", "hola"]
