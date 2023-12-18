@@ -1,0 +1,11 @@
+.card {
+    width: 320px;
+    height: 350px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    border-radius: .625rem;
+}
+
+.rojo {
+    color: red;
+}
