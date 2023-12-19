@@ -54,20 +54,6 @@
 
 // CONTENDOR DE PRODUCTOS
 
-// class Producto {
-//     constructor(nombre, precio, imagen) {
-//         this.nombre = nombre;
-//         this.precio = precio;
-//         this.imagen = imagen;
-//     }
-// }
-
-// const PROD1 = new Producto("yerba", 4000, "")
-// const PROD2 = new Producto("cafe", 4500, "")
-// const PROD3 = new Producto("coca", 1100, "")
-
-// const arrayProductos = [PROD1, PROD2, PROD3]
-
 const PRODUCTOS = [
 
     { nombre: "galleta", precio: 3500 },
