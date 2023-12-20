@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar en Array de Objetos</title>
+</head>
+
+<body>
+
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad">
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script>
+        document.getElementById('miFormulario').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+
+            // Obtener los valores del formulario
+            let nombre = document.getElementById('nombre').value;
+            let edad = document.getElementById('edad').value;
+
+            // Crear un objeto con los valores del formulario
+            let persona = {
+                nombre: nombre,
+                edad: edad
+            };
+
+            // Aquí puedes hacer lo que quieras con el objeto, como agregarlo a un array
+            // Por ejemplo, puedes tener un array que almacene múltiples personas
+            let arrayDePersonas = [];
+
+            // Agregar el objeto persona al array
+            arrayDePersonas.push(persona);
+
+            // Mostrar el objeto creado en el DOM
+            let resultadoDiv = document.getElementById('resultado');
+            let nuevoElemento = document.createElement('p');
+            nuevoElemento.textContent = 'Nombre: ' + persona.nombre + ', Edad: ' + persona.edad;
+            resultadoDiv.appendChild(nuevoElemento);
+
+            // reset de formulario
+            miFormulario.reset()
+
+            // Puedes imprimir el array en la consola para verificar
+            console.log(arrayDePersonas);
+        });
+    </script>
+
+</body>
+
+</html>
