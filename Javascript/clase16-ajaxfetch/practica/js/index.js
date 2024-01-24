@@ -11,3 +11,25 @@ setInterval(() => {
         })
         .catch(error => console.log(error))
 }, 3000)
+
+
+const API_USERS = "https://jsonplaceholder.typicode.com/users"
+
+const divUsers = document.getElementById("users")
+
+fetch(API_USERS)
+    .then(response => response.json())
+    .then(user => {
+        mostrarUsuarios(user)
+    })
+
+
+
+function mostrarUsuarios(datos) {
+    datos.forEach(user => {
+        const li = document.createElement("li")
+        li.textContent = `${user.name}`
+        divUsers.appendChild(li)
+    }
+    )
+}
