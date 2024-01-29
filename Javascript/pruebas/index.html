@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar a WhatsApp</title>
+</head>
+
+<body>
+
+    <form id="miFormulario">
+        <label for="numero">Número de WhatsApp:</label>
+        <input type="text" id="numero" name="numero" required>
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <br>
+        <button type="button" onclick="enviarWhatsApp()">Enviar a WhatsApp</button>
+    </form>
+
+    <script>
+        function enviarWhatsApp() {
+            var numero = document.getElementById('numero').value;
+            var mensaje = document.getElementById('mensaje').value;
+
+            // Formatear el número eliminando espacios y caracteres no numéricos
+            numero = numero.replace(/\D/g, '');
+
+            // Comprobar si el número es válido
+            if (/^\d+$/.test(numero)) {
+                // Abrir una ventana de chat en WhatsApp Web
+                window.open('https://wa.me/' + numero + '?text=' + encodeURIComponent(mensaje), '_blank');
+            } else {
+                alert('Por favor, ingresa un número de WhatsApp válido.');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
