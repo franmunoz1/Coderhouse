@@ -1,6 +1,7 @@
 import './App.css';
 import { Usuario } from './components/Usuario/Usuario';
-import { Card } from './components/Card/Card'
+import { Card } from './components/Card/Card';
+import { Example } from './components/Navbar/Navbar'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
   return (
 
     <>
+      <Example />
       <h1 className='titulo'>Hola mundo!</h1>
       <img style={estilos} src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png" alt="" />
       <Usuario nombre="Francisco" edad={23} />
