@@ -1,7 +1,10 @@
 import './App.css';
 import { Usuario } from './components/Usuario/Usuario';
 import { Card } from './components/Card/Card';
-import { Example } from './components/Navbar/Navbar'
+import { Example } from './components/Navbar/Navbar';
+import ButtonComponent from './components/ButtonComponent';
+import CounterComponent from './components/CounterComponent';
+
 
 function App() {
 
@@ -13,6 +16,25 @@ function App() {
     margin: '10px'
   }
 
+  const caracteristicas = [
+    {
+      color: 'red',
+      texto: 'contacto'
+    },
+    {
+      color: 'blue',
+      texto: 'producto'
+    },
+    {
+      color: 'green',
+      texto: 'nosotros'
+    }
+  ];
+
+  const dispararConsola = () => {
+    console.log('Hola alumnos')
+  }
+
   return (
 
     <>
@@ -22,6 +44,11 @@ function App() {
       <Usuario nombre="Francisco" edad={23} />
       <Usuario nombre="Maria" edad={20} />
       <Card />
+      <h1>Clase 4</h1>
+      <ButtonComponent texto={caracteristicas[0].texto} color={caracteristicas[0].color} callback={dispararConsola} />
+      <ButtonComponent texto={caracteristicas[1].texto} color={caracteristicas[1].color} callback={dispararConsola} />
+      <ButtonComponent texto={caracteristicas[2].texto} color={caracteristicas[2].color} callback={dispararConsola} />
+      <CounterComponent />
     </>
   )
 }
