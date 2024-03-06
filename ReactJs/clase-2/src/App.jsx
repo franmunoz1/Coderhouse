@@ -10,6 +10,7 @@ import Search from './components/Search/Search';
 import UsesComponent from './components/UsesComponent/UsesComponent';
 import ProductCard from './components/ProductCard';
 import TaskList from './components/TaskList/TaskList';
+import ApiMeli from './components/ApiMeli/ApiMeli';
 
 function App() {
 
@@ -80,6 +81,7 @@ function App() {
       <Search />
       <UsesComponent />
       <TaskList tareas={tasks} />
+      <ApiMeli />
     </>
   )
 }
