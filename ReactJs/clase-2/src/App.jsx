@@ -11,6 +11,8 @@ import UsesComponent from './components/UsesComponent/UsesComponent';
 import ProductCard from './components/ProductCard';
 import TaskList from './components/TaskList/TaskList';
 import ApiMeli from './components/ApiMeli/ApiMeli';
+import CalculadorComponente from './components/CalculadorComponente/CalculadorComponente';
+import PadreComponente from './components/PadreComponente/PadreComponente';
 
 function App() {
 
@@ -82,6 +84,11 @@ function App() {
       <UsesComponent />
       <TaskList tareas={tasks} />
       <ApiMeli />
+      <CalculadorComponente />
+      <PadreComponente>
+        <p>No olvides suscribirte al canal</p>
+        <button>Pulsar</button>
+      </PadreComponente>
     </>
   )
 }
